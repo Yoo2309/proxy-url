@@ -7,7 +7,7 @@ const PORT = process.env.PORT || 3001;
 
 app.use(cors());
 
-app.get("/", (req, res) => res.send("Express on Vercel"));
+app.get("/hello", (req, res) => res.send("Express on Vercel"));
 app.get("/proxy", (req, res) => {
   const url = req.query.url;
   if (!url) {
